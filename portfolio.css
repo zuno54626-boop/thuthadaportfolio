@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fffaf6;
+
+  background-image:
+    linear-gradient(#d9d8ef 1px, transparent 1px),
+    linear-gradient(90deg, #d9d8ef 1px, transparent 1px);
+
+  background-size: 40px 30px;
+}
+
+/* ---------- Header ---------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f8c8d7;
+  border-bottom: 2px solid #d7c7c7;
+  z-index: 100;
+  nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    .left-nav,
+    .right-nav {
+      display: flex;
+      gap: 35px;
+    }
+    .topic {
+      font-size: 30px;
+      font-weight: bold;
+      color: #6b243d;
+    }
+    a {
+      text-decoration: none;
+      color: #6b243d;
+      margin-left: 30px;
+      font-weight: 500;
+    }
+    a:hover {
+      color: #d56c94;
+    }
+  }
+}
+
+/* ---------- Home ---------- */
+
+.home {
+  max-width: 1200px;
+  width: 90%;
+  margin: 200px auto 150px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  padding-left: 90px;
+
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  .left {
+    small {
+      color: #6b243d;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bolder;
+    }
+  }
+  h1 {
+    color: #6b243d;
+    font-size: 60px;
+    line-height: 0.95;
+    margin: 18px 0 40px;
+    margin-top: 30px;
+  }
+}
+.card {
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #8b5869;
+  background: #fff8f4;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-left: 70px;
+  border-radius: 2rem;
+  .name {
+    display: inline-block;
+    background: #f6d2dd;
+    color: #6b243d;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 1rem;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  p {
+    color: #444;
+    line-height: 1.9;
+    margin-top: 20px;
+    letter-spacing: 3px;
+  }
+}
+.profile {
+  width: 100%;
+  max-width: 450px;
+  border: 2px solid #8b5869;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    display: block;
+    object-position: bottom;
+  }
+}
+
+/* ---------- About ---------- */
+
+#about {
+  padding: 120px 10%;
+  .about-title {
+    text-align: center;
+
+    font-size: 55px;
+    color: #6b243d;
+    margin-bottom: 60px;
+  }
+  .about-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    .about-text {
+      background: #ffffff;
+      padding: 50px 60px;
+
+      border-left: 8px solid #d98aa5;
+
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+      position: relative;
+      ul {
+        margin-left: 25px;
+        margin-bottom: 20px;
+        li {
+          line-height: 30px;
+          color: #555;
+        }
+      }
+      p {
+        font-size: 17px;
+        line-height: 2;
+        color: #555;
+        margin-bottom: 20px;
+        line-height: 40px;
+
+        strong {
+          color: #6b243d;
+        }
+      }
+    }
+  }
+}
+/* ---------- Interests ---------- */
+
+#interest {
+  padding: 2rem;
+  .interest-me {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #8b5d5d;
+    letter-spacing: 2px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+
+    .card {
+      display: grid;
+
+      gap: 30px;
+      background: white;
+      border-radius: 25px;
+      padding: 35px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      h3 {
+        margin: 15px;
+        color: #8b5d5d;
+        text-transform: uppercase;
+      }
+      p {
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+#interest .card:hover {
+  transform: translateY(-10px);
+}
+/* ---------- Contact ---------- */
+
+#contact {
+  padding: 120px 10%;
+  display: flex;
+  justify-content: center;
+
+  .contacts {
+    background-color: white;
+    width: 100%;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 25px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    h2 {
+      font-size: 50px;
+      color: #6b243d;
+      margin-bottom: 35px;
+      text-transform: uppercase;
+    }
+    a {
+      display: block;
+      margin: 15px auto;
+      padding: 15px;
+      text-decoration: none;
+      color: #555;
+      background: #fff8f4;
+      border-radius: 15px;
+      transition: 0.3s;
+      font-size: 18px;
+    }
+    .wechat {
+      padding: 15px;
+      text-decoration: none;
+      color: #555;
+      background: #fff8f4;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+
+      img {
+        border-radius: 15px;
+        margin-top: 1.5rem;
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+      }
+    }
+    .telegram {
+      padding: 15px;
+      text-decoration: none;
+      color: #555;
+      background: #fff8f4;
+      border-radius: 15px;
+      img {
+        border-radius: 15px;
+        margin-top: 1.5rem;
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+      }
+    }
+  }
+  a:hover {
+    transform: translateY(-8px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header nav {
+    padding: 15px 30px;
+  }
+
+  header nav .topic {
+    font-size: 24px;
+  }
+
+  header nav .left-nav,
+  header nav .right-nav {
+    gap: 20px;
+  }
+
+  header nav a {
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .home {
+    width: 90%;
+    margin: 180px auto 100px;
+    padding-left: 0;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .home h1 {
+    font-size: 48px;
+  }
+
+  .card {
+    max-width: 450px;
+    padding: 30px;
+  }
+
+  .profile {
+    max-width: 380px;
+  }
+
+  #about {
+    padding: 90px 8%;
+  }
+
+  #about .about-title {
+    font-size: 45px;
+  }
+
+  #about .about-container {
+    max-width: 600px;
+  }
+
+  #about .about-text {
+    padding: 40px;
+  }
+
+  #interest {
+    padding: 80px 6%;
+  }
+
+  #interest .interest-me {
+    font-size: 36px;
+  }
+
+  #interest .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  #contact {
+    padding: 90px 8%;
+  }
+
+  #contact .contacts {
+    max-width: 600px;
+    padding: 40px;
+  }
+
+  #contact .contacts h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  header nav .left-nav,
+  header nav .right-nav {
+    gap: 15px;
+  }
+
+  header nav .topic {
+    font-size: 22px;
+  }
+
+  header nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  .home {
+    width: 90%;
+    margin: 180px auto 80px;
+    padding-left: 0;
+    margin-left: auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .home small {
+    font-size: 12px;
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  .card p {
+    letter-spacing: 1px;
+    line-height: 1.7;
+  }
+
+  .profile {
+    max-width: 300px;
+  }
+
+  #about {
+    padding: 80px 7%;
+  }
+
+  #about .about-title {
+    font-size: 38px;
+  }
+
+  #about .about-text {
+    padding: 30px;
+  }
+
+  #interest {
+    padding: 70px 7%;
+  }
+
+  #interest .interest-me {
+    font-size: 32px;
+  }
+
+  #interest .cards {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  #contact {
+    padding: 80px 7%;
+  }
+
+  #contact .contacts {
+    padding: 30px;
+  }
+
+  #contact .contacts h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  header nav .topic {
+    font-size: 18px;
+  }
+
+  header nav a {
+    font-size: 13px;
+  }
+
+  .home h1 {
+    font-size: 32px;
+  }
+
+  .profile {
+    max-width: 250px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  #about .about-title,
+  #interest .interest-me,
+  #contact .contacts h2 {
+    font-size: 30px;
+  }
+
+  #about .about-text {
+    padding: 20px;
+  }
+}
